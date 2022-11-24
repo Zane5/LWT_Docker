@@ -14,13 +14,13 @@ services:
       - "./lwt_html:/var/www/html"
     ports:
       - "0.0.0.0:80:80"
-    restart: always
+    # restart: always
      
   db:
      image: mysql:5.7
      volumes:
        - db_data:/var/lib/mysql
-     restart: always
+     # restart: always
      environment:
        MYSQL_DATABASE: "lwt"
        MYSQL_ROOT_PASSWORD: "root"
